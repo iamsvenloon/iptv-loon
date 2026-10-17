@@ -10,6 +10,9 @@ name: Generate playlist manually
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '41 22 * * *'
+
 
 permissions:
   contents: read
